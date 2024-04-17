@@ -56,6 +56,10 @@
 		7DAB2E762BCF75690014851A /* Project-Organizer-UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				7DAB2E8C2BCF76970014851A /* Model */,
+				7DAB2E8E2BCF76A40014851A /* View */,
+				7DAB2E8D2BCF769C0014851A /* ViewModel */,
+				7DAB2E8B2BCF76900014851A /* Utilities */,
 				7DAB2E772BCF75690014851A /* AppDelegate.swift */,
 				7DAB2E792BCF75690014851A /* SceneDelegate.swift */,
 				7DAB2E7B2BCF75690014851A /* ViewController.swift */,
@@ -65,6 +69,34 @@
 				7DAB2E852BCF756A0014851A /* Info.plist */,
 			);
 			path = "Project-Organizer-UIKit";
+			sourceTree = "<group>";
+		};
+		7DAB2E8B2BCF76900014851A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7DAB2E8C2BCF76970014851A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7DAB2E8D2BCF769C0014851A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7DAB2E8E2BCF76A40014851A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
