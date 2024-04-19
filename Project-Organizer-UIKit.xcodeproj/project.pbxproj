@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D97A9DD2BD222EC0047553E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D97A9DC2BD222EC0047553E /* AppCoordinator.swift */; };
+		7D97A9E62BD228930047553E /* HomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D97A9E52BD228930047553E /* HomeFactory.swift */; };
+		7D97A9E82BD22A480047553E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D97A9E72BD22A480047553E /* HomeViewController.swift */; };
+		7D97A9EA2BD22ACA0047553E /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D97A9E92BD22ACA0047553E /* HomeCoordinator.swift */; };
+		7D97A9EC2BD232CB0047553E /* AppFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D97A9EB2BD232CB0047553E /* AppFactory.swift */; };
+		7D97A9EF2BD24BBC0047553E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D97A9EE2BD24BBC0047553E /* Coordinator.swift */; };
 		7DAB2E782BCF75690014851A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAB2E772BCF75690014851A /* AppDelegate.swift */; };
 		7DAB2E7A2BCF75690014851A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAB2E792BCF75690014851A /* SceneDelegate.swift */; };
 		7DAB2E7C2BCF75690014851A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAB2E7B2BCF75690014851A /* ViewController.swift */; };
@@ -22,6 +28,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D97A9DC2BD222EC0047553E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		7D97A9E52BD228930047553E /* HomeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactory.swift; sourceTree = "<group>"; };
+		7D97A9E72BD22A480047553E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7D97A9E92BD22ACA0047553E /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		7D97A9EB2BD232CB0047553E /* AppFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFactory.swift; sourceTree = "<group>"; };
+		7D97A9EE2BD24BBC0047553E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		7DAB2E742BCF75690014851A /* Project-Organizer-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project-Organizer-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DAB2E772BCF75690014851A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DAB2E792BCF75690014851A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,9 +61,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7D97A9DA2BD220180047553E /* Coordinator */ = {
+		7D97A9DB2BD221120047553E /* Composition */ = {
 			isa = PBXGroup;
 			children = (
+				7D97A9ED2BD24BAF0047553E /* Coordinator */,
+				7D97A9E22BD225570047553E /* Factories */,
+			);
+			path = Composition;
+			sourceTree = "<group>";
+		};
+		7D97A9DE2BD224D30047553E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7D97A9DF2BD224E60047553E /* Presentation */,
+				7D97A9E02BD224F20047553E /* Composition */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7D97A9DF2BD224E60047553E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7D97A9E42BD225D20047553E /* ViewModel */,
+				7D97A9E32BD2258A0047553E /* Controller */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7D97A9E02BD224F20047553E /* Composition */ = {
+			isa = PBXGroup;
+			children = (
+				7D97A9E52BD228930047553E /* HomeFactory.swift */,
+				7D97A9E92BD22ACA0047553E /* HomeCoordinator.swift */,
+			);
+			path = Composition;
+			sourceTree = "<group>";
+		};
+		7D97A9E12BD225370047553E /* AppCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				7D97A9DC2BD222EC0047553E /* AppCoordinator.swift */,
+			);
+			path = AppCoordinator;
+			sourceTree = "<group>";
+		};
+		7D97A9E22BD225570047553E /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				7D97A9EB2BD232CB0047553E /* AppFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		7D97A9E32BD2258A0047553E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7DAB2E7B2BCF75690014851A /* ViewController.swift */,
+				7D97A9E72BD22A480047553E /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7D97A9E42BD225D20047553E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7DAB2E9F2BCF89AC0014851A /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7D97A9ED2BD24BAF0047553E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				7D97A9E12BD225370047553E /* AppCoordinator */,
+				7D97A9EE2BD24BBC0047553E /* Coordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -75,12 +158,11 @@
 		7DAB2E762BCF75690014851A /* Project-Organizer-UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				7D97A9DA2BD220180047553E /* Coordinator */,
 				7DAB2E9E2BCF7E2A0014851A /* DataSourcesAndDelegates */,
 				7DAB2E8C2BCF76970014851A /* Model */,
 				7DAB2E8E2BCF76A40014851A /* Views */,
-				7DAB2E8D2BCF769C0014851A /* ViewModel */,
-				7DAB2E8F2BCF76EE0014851A /* Controllers */,
+				7DAB2E8F2BCF76EE0014851A /* Scenes */,
+				7D97A9DB2BD221120047553E /* Composition */,
 				7DAB2E8B2BCF76900014851A /* Utilities */,
 				7DAB2E772BCF75690014851A /* AppDelegate.swift */,
 				7DAB2E792BCF75690014851A /* SceneDelegate.swift */,
@@ -108,36 +190,20 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		7DAB2E8D2BCF769C0014851A /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				7DAB2E9F2BCF89AC0014851A /* HomeViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		7DAB2E8E2BCF76A40014851A /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				7DAB2E972BCF7C260014851A /* CollectionView */,
-				7DAB2E902BCF76F30014851A /* Home */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		7DAB2E8F2BCF76EE0014851A /* Controllers */ = {
+		7DAB2E8F2BCF76EE0014851A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				7DAB2E7B2BCF75690014851A /* ViewController.swift */,
+				7D97A9DE2BD224D30047553E /* Home */,
 			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		7DAB2E902BCF76F30014851A /* Home */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Home;
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		7DAB2E972BCF7C260014851A /* CollectionView */ = {
@@ -229,14 +295,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DAB2E7C2BCF75690014851A /* ViewController.swift in Sources */,
+				7D97A9E62BD228930047553E /* HomeFactory.swift in Sources */,
+				7D97A9EF2BD24BBC0047553E /* Coordinator.swift in Sources */,
 				7DAB2EA02BCF89AC0014851A /* HomeViewModel.swift in Sources */,
+				7D97A9DD2BD222EC0047553E /* AppCoordinator.swift in Sources */,
 				7DAB2E782BCF75690014851A /* AppDelegate.swift in Sources */,
 				7DAB2E9B2BCF7C6A0014851A /* CategoryCardCollectionViewDelegate.swift in Sources */,
 				7DAB2E962BCF7ABC0014851A /* Constants.swift in Sources */,
 				7DAB2E942BCF77760014851A /* CollectionViewCell.swift in Sources */,
+				7D97A9EA2BD22ACA0047553E /* HomeCoordinator.swift in Sources */,
 				7DAB2E7A2BCF75690014851A /* SceneDelegate.swift in Sources */,
 				7DAB2E992BCF7C540014851A /* CategoryCardCollectionViewDataSource.swift in Sources */,
 				7DAB2E9D2BCF7D9C0014851A /* Category.swift in Sources */,
+				7D97A9EC2BD232CB0047553E /* AppFactory.swift in Sources */,
+				7D97A9E82BD22A480047553E /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,4 +19,8 @@ struct Constants {
     static let kCategoryShadowOpacity: Float = 0.5
     static let kCategoryShadowOffset: CGSize = CGSize(width: 0.0, height: 4.0)
     
+    
+    // View Controller titles
+    
+    static let kHomeVCTitle = "My Lists"
 }
