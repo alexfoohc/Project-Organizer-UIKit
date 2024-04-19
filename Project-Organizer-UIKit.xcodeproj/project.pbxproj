@@ -49,6 +49,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D97A9DA2BD220180047553E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		7DAB2E6B2BCF75690014851A = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +75,7 @@
 		7DAB2E762BCF75690014851A /* Project-Organizer-UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				7D97A9DA2BD220180047553E /* Coordinator */,
 				7DAB2E9E2BCF7E2A0014851A /* DataSourcesAndDelegates */,
 				7DAB2E8C2BCF76970014851A /* Model */,
 				7DAB2E8E2BCF76A40014851A /* Views */,

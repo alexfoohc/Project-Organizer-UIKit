@@ -16,6 +16,35 @@ class CollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        // Setup UI
+        setupUI()
+        
+        // Add constraints to UI elements
+        setupConstraints()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func configure(withTitle title: String, itemCount: Int) {
+        titleLabel.text = title
+        count.text = String(itemCount)
+    }
+    
+    private func setupConstraints() {
+        let constraints = [
+            titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 14),
+            titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 11),
+            titleLabel.heightAnchor.constraint(equalToConstant: 30),
+            count.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -12),
+            count.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -9),
+            count.heightAnchor.constraint(equalToConstant: 44)
+        ]
+        NSLayoutConstraint.activate(constraints)
+    }
+    
+    private func setupUI() {
         // Initializing UI Elements
         titleLabel = UILabel(frame: contentView.bounds)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -37,25 +66,5 @@ class CollectionViewCell: UICollectionViewCell {
         self.layer.shadowRadius = Constants.kCategoryShadowRadius
         self.layer.shadowOpacity = Constants.kCategoryShadowOpacity
         self.layer.shadowOffset = Constants.kCategoryShadowOffset
-        
-        // Add constraints to UI elements
-        let constraints = [
-            titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 14),
-            titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 11),
-            titleLabel.heightAnchor.constraint(equalToConstant: 30),
-            count.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -12),
-            count.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -9),
-            count.heightAnchor.constraint(equalToConstant: 44)
-        ]
-        NSLayoutConstraint.activate(constraints)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func configure(withTitle title: String, itemCount: Int) {
-        titleLabel.text = title
-        count.text = String(itemCount)
     }
 }
