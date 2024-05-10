@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeController.swift
 //  Project-Organizer-UIKit
 //
 //  Created by Alejandro Hernandez on 16/04/24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeController: UIViewController {
     
     var collectionView: UICollectionView!
     var collectionDelegate: CategoryCardCollectionViewDelegate!
@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setupCollectionView()
+        self.view.backgroundColor = .white
         
     }
     

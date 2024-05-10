@@ -8,11 +8,14 @@
 import UIKit
 
 final class AppCoordinator: Coordinator {
-    var navigation: UINavigationController
-    
+
+    var childCoordinators: [any Coordinator] = []
+    var navigationController: UINavigationController = UINavigationController()
+
     func start() {
-        <#code#>
+        let rootViewController = HomeController()
+        navigationController.navigationBar.prefersLargeTitles = true
+        navigationController.pushViewController(rootViewController, animated: false)
     }
-    
     
 }
