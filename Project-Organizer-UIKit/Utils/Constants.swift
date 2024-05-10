@@ -22,5 +22,6 @@ struct Constants {
     
     // View Controller titles
     
-    static let kHomeVCTitle = "My Lists"
+    static let kMyListsTitle = "My Lists"
+    
 }

@@ -13,7 +13,7 @@ class AppCoordinator: Coordinator {
     var navigationController: UINavigationController = UINavigationController()
     
     func start() {
-        let rootViewController = HomeController()
+        let rootViewController = MyListsViewController()
         rootViewController.coordinator = self
         navigationController.navigationBar.prefersLargeTitles = true
         navigationController.pushViewController(rootViewController, animated: false)

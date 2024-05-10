@@ -1,5 +1,5 @@
 //
-//  HomeController.swift
+//  MyListsViewController.swift
 //  Project-Organizer-UIKit
 //
 //  Created by Alejandro Hernandez on 16/04/24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeController: UIViewController {
+class MyListsViewController: UIViewController {
     
     weak var coordinator: AppCoordinator?
     var collectionView: UICollectionView!
@@ -22,7 +22,7 @@ class HomeController: UIViewController {
         // Do any additional setup after loading the view.
         setupCollectionView()
         self.view.backgroundColor = .white
-        self.title = Constants.kHomeVCTitle
+        self.title = Constants.kMyListsTitle
         
     }
     
@@ -53,7 +53,8 @@ class HomeController: UIViewController {
     
 }
 
-extension HomeController: CategoryCardNavigationDelegate {
+// MARK: - CategoryCardNavigationDelegate
+extension MyListsViewController: CategoryCardNavigationDelegate {
     func didSelectItem(indexPath: IndexPath) {
         coordinator?.pushToList()
     }
