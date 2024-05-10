@@ -7,15 +7,22 @@
 
 import UIKit
 
-final class AppCoordinator: Coordinator {
+class AppCoordinator: Coordinator {
 
-    var childCoordinators: [any Coordinator] = []
+//    var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController = UINavigationController()
-
+    
     func start() {
         let rootViewController = HomeController()
+        rootViewController.coordinator = self
         navigationController.navigationBar.prefersLargeTitles = true
         navigationController.pushViewController(rootViewController, animated: false)
     }
-    
+ 
+    func pushToList() {
+        let viewController = ListDetailViewController()
+        viewController.coordinator = self
+        navigationController.navigationBar.prefersLargeTitles = true
+        navigationController.pushViewController(viewController, animated: true)
+    }
 }

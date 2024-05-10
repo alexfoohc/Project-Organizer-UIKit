@@ -7,10 +7,12 @@
 
 import UIKit
 
+
+
 class CategoryCardCollectionViewDataSource: NSObject, UICollectionViewDataSource {
     
     var data: [Category] = []
-    
+        
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.reusableIdentifier, for: indexPath) as! CollectionViewCell
         cell.configure(withTitle: data[indexPath.row].name, itemCount: data[indexPath.row].count)

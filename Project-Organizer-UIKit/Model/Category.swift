@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Categories: String {
+enum CategoryType: String {
     case personal = "Personal"
     case business = "Business"
     case todo = "ToDo"
