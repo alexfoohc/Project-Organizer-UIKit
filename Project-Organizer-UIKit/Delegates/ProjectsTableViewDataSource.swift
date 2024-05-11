@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProjectCellTableViewDataSource: NSObject, UITableViewDataSource {
+class ProjectsTableViewDataSource: NSObject, UITableViewDataSource {
     
     let tableView: UITableView
     var data: [Project]

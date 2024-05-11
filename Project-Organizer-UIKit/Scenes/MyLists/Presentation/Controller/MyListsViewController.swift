@@ -11,8 +11,9 @@ class MyListsViewController: UIViewController {
     
     weak var coordinator: AppCoordinator?
     var collectionView: UICollectionView!
-    var collectionDelegate: CategoryCardCollectionViewDelegate!
-    var collectionDataSource: CategoryCardCollectionViewDataSource!
+    var collectionDelegate: MyListsCollectionViewDelegate!
+    var collectionDataSource: MyListsCollectionViewDataSource!
+    
     let mockUpData: [Category] = [Category(name: CategoryType.personal.rawValue, count: 0),
                                   Category(name: CategoryType.business.rawValue, count: 2),
                                   Category(name: CategoryType.todo.rawValue, count: 4)]
@@ -23,7 +24,11 @@ class MyListsViewController: UIViewController {
         setupCollectionView()
         self.view.backgroundColor = .white
         self.title = Constants.kMyListsTitle
-        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTapped))
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
     
     private func setupCollectionView() {
@@ -39,9 +44,9 @@ class MyListsViewController: UIViewController {
         collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: CollectionViewCell.reusableIdentifier)
         
         
-        collectionDelegate = CategoryCardCollectionViewDelegate()
+        collectionDelegate = MyListsCollectionViewDelegate()
         collectionDelegate.navigationDelegate = self
-        collectionDataSource = CategoryCardCollectionViewDataSource()
+        collectionDataSource = MyListsCollectionViewDataSource()
         collectionDataSource.data = mockUpData
         
         collectionView.delegate = collectionDelegate
@@ -51,10 +56,14 @@ class MyListsViewController: UIViewController {
         view.addSubview(collectionView)
     }
     
+    @objc private func addButtonTapped(_ sender: UIButton) {
+        print("Button Tapped")
+    }
+    
 }
 
 // MARK: - CategoryCardNavigationDelegate
-extension MyListsViewController: CategoryCardNavigationDelegate {
+extension MyListsViewController: MyListsNavigationDelegate {
     func didSelectItem(indexPath: IndexPath) {
         coordinator?.pushToList()
     }

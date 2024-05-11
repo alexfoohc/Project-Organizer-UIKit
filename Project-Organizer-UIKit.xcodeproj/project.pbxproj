@@ -17,8 +17,8 @@
 		7DAB2E842BCF756A0014851A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7DAB2E832BCF756A0014851A /* Base */; };
 		7DAB2E942BCF77760014851A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAB2E932BCF77760014851A /* CollectionViewCell.swift */; };
 		7DAB2E962BCF7ABC0014851A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAB2E952BCF7ABC0014851A /* Constants.swift */; };
-		7DAB2E992BCF7C540014851A /* CategoryCardCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAB2E982BCF7C540014851A /* CategoryCardCollectionViewDataSource.swift */; };
-		7DAB2E9B2BCF7C6A0014851A /* CategoryCardCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAB2E9A2BCF7C6A0014851A /* CategoryCardCollectionViewDelegate.swift */; };
+		7DAB2E992BCF7C540014851A /* MyListsCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAB2E982BCF7C540014851A /* MyListsCollectionViewDataSource.swift */; };
+		7DAB2E9B2BCF7C6A0014851A /* MyListsCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAB2E9A2BCF7C6A0014851A /* MyListsCollectionViewDelegate.swift */; };
 		7DAB2E9D2BCF7D9C0014851A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAB2E9C2BCF7D9C0014851A /* Category.swift */; };
 		7DAB2EA02BCF89AC0014851A /* MyListsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAB2E9F2BCF89AC0014851A /* MyListsViewModel.swift */; };
 		7DB940192BEDEEBF0076B9DF /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB940182BEDEEBF0076B9DF /* ListDetailViewController.swift */; };
@@ -27,8 +27,8 @@
 		7DB940222BEDEF740076B9DF /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB940212BEDEF740076B9DF /* Note.swift */; };
 		7DB940242BEDEFC80076B9DF /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB940232BEDEFC80076B9DF /* Feature.swift */; };
 		7DFDFCF32BEEA497009EF35A /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFDFCF22BEEA497009EF35A /* ProjectCell.swift */; };
-		7DFDFCF72BEEA8FA009EF35A /* ProjectCellTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFDFCF62BEEA8FA009EF35A /* ProjectCellTableViewDelegate.swift */; };
-		7DFDFCF92BEEA90B009EF35A /* ProjectCellTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFDFCF82BEEA90B009EF35A /* ProjectCellTableViewDataSource.swift */; };
+		7DFDFCF72BEEA8FA009EF35A /* ProjectsTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFDFCF62BEEA8FA009EF35A /* ProjectsTableViewDelegate.swift */; };
+		7DFDFCF92BEEA90B009EF35A /* ProjectsTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFDFCF82BEEA90B009EF35A /* ProjectsTableViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,8 +44,8 @@
 		7DAB2E852BCF756A0014851A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DAB2E932BCF77760014851A /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		7DAB2E952BCF7ABC0014851A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		7DAB2E982BCF7C540014851A /* CategoryCardCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardCollectionViewDataSource.swift; sourceTree = "<group>"; };
-		7DAB2E9A2BCF7C6A0014851A /* CategoryCardCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		7DAB2E982BCF7C540014851A /* MyListsCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListsCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		7DAB2E9A2BCF7C6A0014851A /* MyListsCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListsCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		7DAB2E9C2BCF7D9C0014851A /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		7DAB2E9F2BCF89AC0014851A /* MyListsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListsViewModel.swift; sourceTree = "<group>"; };
 		7DB940182BEDEEBF0076B9DF /* ListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
@@ -54,8 +54,8 @@
 		7DB940212BEDEF740076B9DF /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		7DB940232BEDEFC80076B9DF /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 		7DFDFCF22BEEA497009EF35A /* ProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
-		7DFDFCF62BEEA8FA009EF35A /* ProjectCellTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCellTableViewDelegate.swift; sourceTree = "<group>"; };
-		7DFDFCF82BEEA90B009EF35A /* ProjectCellTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCellTableViewDataSource.swift; sourceTree = "<group>"; };
+		7DFDFCF62BEEA8FA009EF35A /* ProjectsTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsTableViewDelegate.swift; sourceTree = "<group>"; };
+		7DFDFCF82BEEA90B009EF35A /* ProjectsTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsTableViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,10 +162,7 @@
 		7DAB2E762BCF75690014851A /* Project-Organizer-UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				7DFDFCFC2BEEAAB7009EF35A /* UICollectionView+Delegate */,
-				7DFDFCFB2BEEAA98009EF35A /* UITableView+DataSources */,
-				7DFDFCFA2BEEAA8C009EF35A /* UITableView+Delegates */,
-				7DAB2E9E2BCF7E2A0014851A /* DataSourcesAndDelegates */,
+				7DFDFD002BEED10B009EF35A /* Delegates */,
 				7DAB2E8C2BCF76970014851A /* Model */,
 				7DAB2E8E2BCF76A40014851A /* Custom Cells */,
 				7DAB2E8F2BCF76EE0014851A /* Scenes */,
@@ -227,14 +224,6 @@
 				7DAB2E932BCF77760014851A /* CollectionViewCell.swift */,
 			);
 			path = CollectionView;
-			sourceTree = "<group>";
-		};
-		7DAB2E9E2BCF7E2A0014851A /* DataSourcesAndDelegates */ = {
-			isa = PBXGroup;
-			children = (
-				7DFDFCF42BEEA8C7009EF35A /* HomeCollectionView */,
-			);
-			path = DataSourcesAndDelegates;
 			sourceTree = "<group>";
 		};
 		7DB940122BEDEE750076B9DF /* MyListsDetail */ = {
@@ -316,43 +305,22 @@
 			path = Project;
 			sourceTree = "<group>";
 		};
-		7DFDFCF42BEEA8C7009EF35A /* HomeCollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				7DAB2E982BCF7C540014851A /* CategoryCardCollectionViewDataSource.swift */,
-				7DAB2E9A2BCF7C6A0014851A /* CategoryCardCollectionViewDelegate.swift */,
-			);
-			path = HomeCollectionView;
-			sourceTree = "<group>";
-		};
-		7DFDFCFA2BEEAA8C009EF35A /* UITableView+Delegates */ = {
-			isa = PBXGroup;
-			children = (
-				7DFDFCF62BEEA8FA009EF35A /* ProjectCellTableViewDelegate.swift */,
-			);
-			path = "UITableView+Delegates";
-			sourceTree = "<group>";
-		};
-		7DFDFCFB2BEEAA98009EF35A /* UITableView+DataSources */ = {
-			isa = PBXGroup;
-			children = (
-				7DFDFCF82BEEA90B009EF35A /* ProjectCellTableViewDataSource.swift */,
-			);
-			path = "UITableView+DataSources";
-			sourceTree = "<group>";
-		};
-		7DFDFCFC2BEEAAB7009EF35A /* UICollectionView+Delegate */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "UICollectionView+Delegate";
-			sourceTree = "<group>";
-		};
 		7DFDFCFD2BEEB423009EF35A /* NewProject */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = NewProject;
+			sourceTree = "<group>";
+		};
+		7DFDFD002BEED10B009EF35A /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				7DAB2E9A2BCF7C6A0014851A /* MyListsCollectionViewDelegate.swift */,
+				7DAB2E982BCF7C540014851A /* MyListsCollectionViewDataSource.swift */,
+				7DFDFCF62BEEA8FA009EF35A /* ProjectsTableViewDelegate.swift */,
+				7DFDFCF82BEEA90B009EF35A /* ProjectsTableViewDataSource.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -430,20 +398,20 @@
 				7D97A9EF2BD24BBC0047553E /* Coordinator.swift in Sources */,
 				7DAB2EA02BCF89AC0014851A /* MyListsViewModel.swift in Sources */,
 				7DB940192BEDEEBF0076B9DF /* ListDetailViewController.swift in Sources */,
-				7DFDFCF72BEEA8FA009EF35A /* ProjectCellTableViewDelegate.swift in Sources */,
+				7DFDFCF72BEEA8FA009EF35A /* ProjectsTableViewDelegate.swift in Sources */,
 				7DB940242BEDEFC80076B9DF /* Feature.swift in Sources */,
 				7DB9401D2BEDEEE40076B9DF /* List.swift in Sources */,
 				7DB940222BEDEF740076B9DF /* Note.swift in Sources */,
 				7DB9401F2BEDEF170076B9DF /* Project.swift in Sources */,
 				7D97A9DD2BD222EC0047553E /* AppCoordinator.swift in Sources */,
 				7DAB2E782BCF75690014851A /* AppDelegate.swift in Sources */,
-				7DAB2E9B2BCF7C6A0014851A /* CategoryCardCollectionViewDelegate.swift in Sources */,
+				7DAB2E9B2BCF7C6A0014851A /* MyListsCollectionViewDelegate.swift in Sources */,
 				7DFDFCF32BEEA497009EF35A /* ProjectCell.swift in Sources */,
-				7DFDFCF92BEEA90B009EF35A /* ProjectCellTableViewDataSource.swift in Sources */,
+				7DFDFCF92BEEA90B009EF35A /* ProjectsTableViewDataSource.swift in Sources */,
 				7DAB2E962BCF7ABC0014851A /* Constants.swift in Sources */,
 				7DAB2E942BCF77760014851A /* CollectionViewCell.swift in Sources */,
 				7DAB2E7A2BCF75690014851A /* SceneDelegate.swift in Sources */,
-				7DAB2E992BCF7C540014851A /* CategoryCardCollectionViewDataSource.swift in Sources */,
+				7DAB2E992BCF7C540014851A /* MyListsCollectionViewDataSource.swift in Sources */,
 				7DAB2E9D2BCF7D9C0014851A /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

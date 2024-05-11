@@ -9,7 +9,7 @@ import UIKit
 
 
 
-class CategoryCardCollectionViewDataSource: NSObject, UICollectionViewDataSource {
+class MyListsCollectionViewDataSource: NSObject, UICollectionViewDataSource {
     
     var data: [Category] = []
         

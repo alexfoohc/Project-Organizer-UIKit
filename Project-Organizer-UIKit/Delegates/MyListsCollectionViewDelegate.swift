@@ -7,13 +7,13 @@
 
 import UIKit
 
-protocol CategoryCardNavigationDelegate: AnyObject {
+protocol MyListsNavigationDelegate: AnyObject {
     func didSelectItem(indexPath: IndexPath)
 }
 
-class CategoryCardCollectionViewDelegate: NSObject, UICollectionViewDelegateFlowLayout {
+class MyListsCollectionViewDelegate: NSObject, UICollectionViewDelegateFlowLayout {
     
-    weak var navigationDelegate: CategoryCardNavigationDelegate?
+    weak var navigationDelegate: MyListsNavigationDelegate?
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: Constants.kCategoryCardWidth, height: Constants.kCategoryCardHeight)
