@@ -19,10 +19,18 @@ class AppCoordinator: Coordinator {
         navigationController.pushViewController(rootViewController, animated: false)
     }
  
-    func pushToList() {
+    func pushToListDetail() {
         let viewController = ListDetailViewController()
         viewController.coordinator = self
         navigationController.navigationBar.prefersLargeTitles = true
         navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    func presentNewProjectSheet() {
+        let viewController = NewProjectViewController()
+        viewController.coordinator = self
+        navigationController.navigationBar.prefersLargeTitles = true
+        navigationController.modalPresentationStyle = .formSheet
+        navigationController.present(viewController, animated: true)
     }
 }

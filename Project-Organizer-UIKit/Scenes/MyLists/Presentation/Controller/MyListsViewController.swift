@@ -58,6 +58,7 @@ class MyListsViewController: UIViewController {
     
     @objc private func addButtonTapped(_ sender: UIButton) {
         print("Button Tapped")
+        coordinator?.presentNewProjectSheet()
     }
     
 }
@@ -65,7 +66,7 @@ class MyListsViewController: UIViewController {
 // MARK: - CategoryCardNavigationDelegate
 extension MyListsViewController: MyListsNavigationDelegate {
     func didSelectItem(indexPath: IndexPath) {
-        coordinator?.pushToList()
+        coordinator?.pushToListDetail()
     }
     
     

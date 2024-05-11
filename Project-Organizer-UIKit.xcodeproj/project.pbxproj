@@ -29,6 +29,7 @@
 		7DFDFCF32BEEA497009EF35A /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFDFCF22BEEA497009EF35A /* ProjectCell.swift */; };
 		7DFDFCF72BEEA8FA009EF35A /* ProjectsTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFDFCF62BEEA8FA009EF35A /* ProjectsTableViewDelegate.swift */; };
 		7DFDFCF92BEEA90B009EF35A /* ProjectsTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFDFCF82BEEA90B009EF35A /* ProjectsTableViewDataSource.swift */; };
+		7DFDFD042BEF2F7F009EF35A /* NewProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFDFD032BEF2F7F009EF35A /* NewProjectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		7DFDFCF22BEEA497009EF35A /* ProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
 		7DFDFCF62BEEA8FA009EF35A /* ProjectsTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsTableViewDelegate.swift; sourceTree = "<group>"; };
 		7DFDFCF82BEEA90B009EF35A /* ProjectsTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsTableViewDataSource.swift; sourceTree = "<group>"; };
+		7DFDFD032BEF2F7F009EF35A /* NewProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProjectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,6 +310,8 @@
 		7DFDFCFD2BEEB423009EF35A /* NewProject */ = {
 			isa = PBXGroup;
 			children = (
+				7DFDFD012BEF2F65009EF35A /* Presentation */,
+				7DFDFD022BEF2F6C009EF35A /* Composition */,
 			);
 			path = NewProject;
 			sourceTree = "<group>";
@@ -321,6 +325,21 @@
 				7DFDFCF82BEEA90B009EF35A /* ProjectsTableViewDataSource.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		7DFDFD012BEF2F65009EF35A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7DFDFD032BEF2F7F009EF35A /* NewProjectViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7DFDFD022BEF2F6C009EF35A /* Composition */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Composition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,6 +422,7 @@
 				7DB9401D2BEDEEE40076B9DF /* List.swift in Sources */,
 				7DB940222BEDEF740076B9DF /* Note.swift in Sources */,
 				7DB9401F2BEDEF170076B9DF /* Project.swift in Sources */,
+				7DFDFD042BEF2F7F009EF35A /* NewProjectViewController.swift in Sources */,
 				7D97A9DD2BD222EC0047553E /* AppCoordinator.swift in Sources */,
 				7DAB2E782BCF75690014851A /* AppDelegate.swift in Sources */,
 				7DAB2E9B2BCF7C6A0014851A /* MyListsCollectionViewDelegate.swift in Sources */,
